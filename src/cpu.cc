@@ -1,4 +1,4 @@
-#include "cpu.hh"
+#include "../include/cpu.hh"
 
 namespace cpu {
     void handle_instruction(opcode_t const opcode) {

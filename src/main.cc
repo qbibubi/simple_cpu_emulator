@@ -54,6 +54,7 @@ int main(int argc, char** argv) {
         // here all the parsing will be done however this has to be done
         // with indexed for loop to access further positions for proper
         // instruction parsing
+        // Parsing sybnta
     }
 
     return 0;
