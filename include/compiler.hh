@@ -1,6 +1,8 @@
 #pragma once
 #include <filesystem>
-#include <string>
+#include <vector>
+
+#include "../include/cpu.hh"
 
 /**
  * 1) We will have two types of parsing:
@@ -16,6 +18,5 @@
  *    basing on a predefined instruction set.
  */
 namespace compiler {
-    void parse_assembly_input(std::filesystem::path const& input_path);
-    void generate_binary();
+    [[nodiscard]] std::vector<cpu::instruction_t> parse_input(std::filesystem::path const& input_path);
 } // namespace compiler
